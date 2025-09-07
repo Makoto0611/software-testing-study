@@ -4,62 +4,86 @@
 
 ```
 testing/
-├── 01_test_fundamentals/          # テスト基礎
-│   ├── principles_and_concepts/   # テストの原則と概念
-│   └── test_process/             # テストプロセス
-├── 02_test_techniques/           # テスト技法
-│   ├── static_testing/           # 静的テスト
-│   │   ├── review/              # レビュー
-│   │   └── static_analysis/     # 静的解析
-│   └── dynamic_testing/          # 動的テスト
-│       ├── blackbox/            # ブラックボックステスト
-│       │   ├── equivalence_partitioning/  # 同値分割
-│       │   ├── boundary_value_analysis/   # 境界値分析
-│       │   └── decision_table/            # デシジョンテーブル
-│       ├── whitebox/            # ホワイトボックステスト
-│       └── experience_based/    # 経験ベーステスト
-├── 03_specialized_testing/       # 専門領域テスト
-│   ├── performance_testing/      # パフォーマンステスト
-│   ├── security_testing/         # セキュリティテスト
-│   └── mobile_api_db_cloud/     # モバイル/API/DB/クラウド
-├── 04_test_automation/          # テスト自動化
-│   ├── roi_analysis/            # ROI分析
-│   ├── frameworks/              # フレームワーク
-│   └── cicd_integration/        # CI/CD統合
-├── 05_test_management/          # テスト管理
-│   ├── planning/                # 計画
-│   ├── execution_management/    # 実行管理
-│   └── metrics/                 # メトリクス
-├── 06_latest_trends/            # 最新トレンド
-│   ├── ai_testing/              # AIテスト
-│   ├── big_data/                # ビッグデータ
-│   └── iot/                     # IoT
-├── exercises/                   # 演習問題
-├── progress/                    # 学習進捗管理
-└── materials/                   # 教材・資料
+├── 01_test_fundamentals/               # テスト基礎
+│   ├── 01_principles_and_concepts/     # テストの原則と概念
+│   └── 02_test_process/                # テストプロセス
+├── 02_test_techniques/                 # テスト技法
+│   ├── 01_static_testing/              # 静的テスト
+│   │   ├── 01_review/                  # レビュー技法
+│   │   └── 02_static_analysis/         # 静的解析
+│   └── 02_dynamic_testing/             # 動的テスト
+│       ├── 01_blackbox/                # ブラックボックステスト
+│       │   ├── 01_equivalence_partitioning/  # 同値分割
+│       │   ├── 02_boundary_value_analysis/   # 境界値分析
+│       │   └── 03_decision_table/            # デシジョンテーブル
+│       ├── 02_whitebox/                # ホワイトボックステスト
+│       │   ├── 01_statement_coverage/  # 命令網羅
+│       │   ├── 02_branch_coverage/     # 分岐網羅
+│       │   └── 03_condition_coverage/  # 条件網羅
+│       └── 03_experience_based/        # 経験ベーステスト
+│           ├── 01_exploratory_testing/ # 探索的テスト
+│           └── 02_error_guessing/      # エラー推測
+├── 03_specialized_testing/             # 専門領域テスト
+│   ├── 01_performance_testing/         # パフォーマンステスト
+│   ├── 02_security_testing/            # セキュリティテスト
+│   └── 03_mobile_api_db_cloud/         # モバイル/API/DB/クラウド
+├── 04_test_automation/                 # テスト自動化
+│   ├── 01_roi_analysis/                # ROI分析
+│   ├── 02_frameworks/                  # フレームワーク
+│   └── 03_cicd_integration/            # CI/CD統合
+├── 05_test_management/                 # テスト管理
+│   ├── 01_planning/                    # 計画
+│   ├── 02_execution_management/        # 実行管理
+│   └── 03_metrics/                     # メトリクス
+├── 06_latest_trends/                   # 最新トレンド
+│   ├── 01_ai_testing/                  # AIテスト
+│   ├── 02_big_data/                    # ビッグデータ
+│   └── 03_iot/                         # IoT
+├── exercises/                          # 演習問題
+├── progress/                           # 学習進捗管理
+└── materials/                          # 教材・資料
 ```
 
 ## 🎯 推奨学習順序
 
 ### Phase 1: 基礎固め
 1. **テスト基礎** (`01_test_fundamentals/`)
-   - テストの原則と概念
-   - テストプロセス
+   - 01_principles_and_concepts/ (テストの原則と概念)
+   - 02_test_process/ (テストプロセス)
 
 ### Phase 2: テスト技法習得
-2. **ブラックボックステスト** (`02_test_techniques/dynamic_testing/blackbox/`)
-   - 同値分割 ✅
-   - 境界値分析 ✅
-   - **デシジョンテーブル** ← 次回学習予定
-3. **静的テスト** (`02_test_techniques/static_testing/`)
-4. **ホワイトボックステスト** (`02_test_techniques/dynamic_testing/whitebox/`)
-5. **経験ベーステスト** (`02_test_techniques/dynamic_testing/experience_based/`)
+2. **ブラックボックステスト** (`02_test_techniques/02_dynamic_testing/01_blackbox/`)
+   - 01_equivalence_partitioning/ (同値分割) ✅
+   - 02_boundary_value_analysis/ (境界値分析) ✅
+   - **03_decision_table/ (デシジョンテーブル)** ← 次回学習予定
+3. **静的テスト** (`02_test_techniques/01_static_testing/`)
+   - 01_review/ (レビュー技法)
+   - 02_static_analysis/ (静的解析)
+4. **ホワイトボックステスト** (`02_test_techniques/02_dynamic_testing/02_whitebox/`)
+   - 01_statement_coverage/ (命令網羅)
+   - 02_branch_coverage/ (分岐網羅)
+   - 03_condition_coverage/ (条件網羅)
+5. **経験ベーステスト** (`02_test_techniques/02_dynamic_testing/03_experience_based/`)
+   - 01_exploratory_testing/ (探索的テスト)
+   - 02_error_guessing/ (エラー推測)
 
 ### Phase 3: 専門分野
 6. **専門領域テスト** (`03_specialized_testing/`)
+   - 01_performance_testing/ (パフォーマンステスト)
+   - 02_security_testing/ (セキュリティテスト)
+   - 03_mobile_api_db_cloud/ (モバイル/API/DB/クラウド)
 7. **テスト自動化** (`04_test_automation/`)
+   - 01_roi_analysis/ (ROI分析)
+   - 02_frameworks/ (フレームワーク)
+   - 03_cicd_integration/ (CI/CD統合)
 8. **テスト管理** (`05_test_management/`)
+   - 01_planning/ (計画)
+   - 02_execution_management/ (実行管理)
+   - 03_metrics/ (メトリクス)
 9. **最新トレンド** (`06_latest_trends/`)
+   - 01_ai_testing/ (AIテスト)
+   - 02_big_data/ (ビッグデータ)
+   - 03_iot/ (IoT)
 
 ## 📝 作業ログ管理システム
 
@@ -96,10 +120,69 @@ testing/
 
 ## 🗂️ ディレクトリ整理状況
 
-✅ **整理完了** - 重複ディレクトリを統合し、統一された構成に整理済み
+✅ **整理完了** - 項番付きの統一されたディレクトリ構成に更新
 
-❗ **手動削除が必要**：以下のディレクトリをエクスプローラーで削除してください
-- `01_基礎/`, `01_test_techniques/`, `02_exercises/`, `03_progress/`, `04_materials/`, `04_自動化/`
+❗ **手動でのフォルダ名変更が必要**：
+以下のディレクトリ名を項番付きに変更してください：
+
+### 第1階層
+- `test_fundamentals/` → `01_test_fundamentals/`
+- `test_techniques/` → `02_test_techniques/`
+- `specialized_testing/` → `03_specialized_testing/`
+- `test_automation/` → `04_test_automation/`
+- `test_management/` → `05_test_management/`
+- `latest_trends/` → `06_latest_trends/`
+
+### 第2階層（01_test_fundamentals/）
+- `principles_and_concepts/` → `01_principles_and_concepts/`
+- `test_process/` → `02_test_process/`
+
+### 第2階層（02_test_techniques/）
+- `static_testing/` → `01_static_testing/`
+- `dynamic_testing/` → `02_dynamic_testing/`
+
+### 第3階層（01_static_testing/）
+- `review/` → `01_review/`
+- `static_analysis/` → `02_static_analysis/`
+
+### 第3階層（02_dynamic_testing/）
+- `blackbox/` → `01_blackbox/`
+- `whitebox/` → `02_whitebox/`
+- `experience_based/` → `03_experience_based/`
+
+### 第4階層（01_blackbox/）
+- `equivalence_partitioning/` → `01_equivalence_partitioning/`
+- `boundary_value_analysis/` → `02_boundary_value_analysis/`
+- `decision_table/` → `03_decision_table/`
+
+### 第4階層（02_whitebox/）
+- `statement_coverage/` → `01_statement_coverage/`
+- `branch_coverage/` → `02_branch_coverage/`
+- `condition_coverage/` → `03_condition_coverage/`
+
+### 第4階層（03_experience_based/）
+- `exploratory_testing/` → `01_exploratory_testing/`
+- `error_guessing/` → `02_error_guessing/`
+
+### 第2階層（03_specialized_testing/）
+- `performance_testing/` → `01_performance_testing/`
+- `security_testing/` → `02_security_testing/`
+- `mobile_api_db_cloud/` → `03_mobile_api_db_cloud/`
+
+### 第2階層（04_test_automation/）
+- `roi_analysis/` → `01_roi_analysis/`
+- `frameworks/` → `02_frameworks/`
+- `cicd_integration/` → `03_cicd_integration/`
+
+### 第2階層（05_test_management/）
+- `planning/` → `01_planning/`
+- `execution_management/` → `02_execution_management/`
+- `metrics/` → `03_metrics/`
+
+### 第2階層（06_latest_trends/）
+- `ai_testing/` → `01_ai_testing/`
+- `big_data/` → `02_big_data/`
+- `iot/` → `03_iot/`
 
 ## 📚 各ディレクトリ学習ガイド
 

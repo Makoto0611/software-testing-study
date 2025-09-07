@@ -1,0 +1,15 @@
+# 一時ファイル
+*.tmp
+*.log
+~$*
+
+# IDE設定
+.vscode/
+.idea/
+
+# OS固有
+Thumbs.db
+.DS_Store
+
+# 個人メモ（必要に応じて）
+private/
